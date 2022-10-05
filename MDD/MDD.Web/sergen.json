@@ -1,0 +1,46 @@
+{
+  "RootNamespace": "MDD",
+  "ServerTypings": {
+    "LocalTexts": true
+  },
+  "Restore": {
+    "Exclude": [
+      "/wwwroot/Scripts/serenity/Serenity.CoreLib*.*"
+    ]
+  },
+  "Connections": [
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "dbo.Customers",
+          "Identifier": "Customers",
+          "Module": "Default",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.OrderDetails",
+          "Identifier": "OrderDetails",
+          "Module": "Default",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Orders",
+          "Identifier": "Orders",
+          "Module": "Default",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Productos",
+          "Identifier": "Productos",
+          "Module": "Default",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
+  "UpgradeInfo": {
+    "InitialType": "Community",
+    "InitialVersion": "6.0.3.0"
+  }
+}
